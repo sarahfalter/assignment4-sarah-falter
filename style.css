@@ -11,6 +11,7 @@ body {
 }
  header {
    background: white;
+   position: relative;
  }
 
 h1 {
@@ -25,6 +26,21 @@ p {
   margin-left: 100px
 }
 
+span {
+  margin-left: 500px;
+}
+
+.favicon {
+  margin-left: 10px;
+  max-width: 100px;
+  position: absolute;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  margin-left: 600px;
+}
+
 .menu ul {
   list-style: none;
   margin: 0;
@@ -35,20 +51,22 @@ p {
 .menu > ul > li {
   display:inline-block;
   margin-bottom: 1px;
-  position: relative;
   vertical-align: top;
 
 }
-
 .menu li a {
   color: #4d4d4d;
   display: block;
   padding: 20px;
+  position: relative;
+  text-decoration: none;
 }
 
 .menu ul li a:hover {
   color: #49B4FC;
+  transition: .5s;
 }
+
 .menu-item:hover .sub-menu {
   display: block;
 }
