@@ -8,17 +8,34 @@
 body {
   background: #4d4d4d;
   font-family: "Raleway", sans-serif;
+  margin-top: 50px;
+  position: relative;
+  z-index: 98;
 }
+
  header {
    background: white;
-   position: relative;
- }
+   margin-left: 0;
+   margin-top: 0;
+   position: fixed;
+   width: 100%;
+   z-index: 99;
+}
 
 h1 {
+  color: #49B4FC;
+  font-size: 60pt;
   margin-top: 200px;
   margin-left: 100px;
-  font-size: 40pt;
-  color: #49B4FC;
+  position: relative;
+  animation: heading;
+  animation-duration: 3s;
+}
+
+@keyframes heading {
+  0% {left: -50px}
+  100% {right: 200px;}
+
 }
 
 p {
@@ -32,8 +49,9 @@ span {
 
 .favicon {
   margin-left: 10px;
-  max-width: 100px;
-  position: absolute;
+  margin-top: 40px;
+  max-height; 40px;
+  position: relative;
 }
 .container {
   width: 200px;
