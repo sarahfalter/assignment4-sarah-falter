@@ -9,54 +9,75 @@ body {
   background: #4d4d4d;
   font-family: "Raleway", sans-serif;
   margin-top: 50px;
-  position: relative;
-  z-index: 98;
 }
 
  header {
    background: white;
+   float: left;
    margin-left: 0;
    margin-top: 0;
    position: fixed;
    width: 100%;
-   z-index: 99;
+   z-index: 99999;
+   top: 0;
 }
 
-h1 {
+.container-first {
+  margin-top: 400px;
+  margin-left: 100px;
+}
+
+.logo {
+  height: 35px;
+  width: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 2px 2px;
+  position: absolute;
+  top: 0;
+}
+
+.image-main {
+  height: 400px;
+  width: 400px;
+  margin-right: 300px;
+  float: right;
+}
+
+.container-first h1 {
   color: #49B4FC;
   font-size: 60pt;
-  margin-top: 200px;
-  margin-left: 100px;
-  position: relative;
-  animation: heading;
-  animation-duration: 3s;
 }
 
-@keyframes heading {
-  0% {left: -50px}
-  100% {right: 200px;}
-
+.container-first p {
+    font-size: 24px;
+    color: #e6e6e6;
 }
 
-p {
-  color: #E6E6E6;
-  margin-left: 100px
+.container-second {
+    margin-top: 500px;
+    background: #e6e6e6;
+    width: 100%;
 }
 
+.container-second h2 {
+    font-size: 36pt;
+    text-align: center;
+    padding-top: 200px;
+    color: #4d4d4d;
+}
 span {
-  margin-left: 500px;
+    color: #49B4FC;
+    font-size: 40pt;
 }
 
-.favicon {
-  margin-left: 10px;
-  margin-top: 40px;
-  max-height; 40px;
-  position: relative;
-}
-.container {
-  width: 200px;
-  height: 200px;
-  margin-left: 600px;
+.container-second p {
+    font-size: 24pt;
+    text-align: left;
+    line-height: 1.6;
+    padding: 30px 35px;
+    width: 1000px;
+    margin: auto;
 }
 
 .menu ul {
@@ -70,13 +91,12 @@ span {
   display:inline-block;
   margin-bottom: 1px;
   vertical-align: top;
-
 }
+
 .menu li a {
   color: #4d4d4d;
   display: block;
   padding: 20px;
-  position: relative;
   text-decoration: none;
 }
 
