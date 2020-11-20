@@ -1,3 +1,10 @@
+/*==========================
+
+
+Universal Styling
+
+*==========================*/
+
 * {
   margin: 0;
   padding: 0;
@@ -11,74 +18,13 @@ body {
   margin-top: 50px;
 }
 
- header {
-   background: white;
-   float: left;
-   margin-left: 0;
-   margin-top: 0;
-   position: fixed;
-   width: 100%;
-   z-index: 99999;
-   top: 0;
-}
+/*==========================
 
-.container-first {
-  margin-top: 400px;
-  margin-left: 100px;
-}
 
-.logo {
-  height: 35px;
-  width: 30px;
-  margin-top: 10px;
-  margin-left: 20px;
-  padding: 2px 2px;
-  position: absolute;
-  top: 0;
-}
+Navigation
 
-.image-main {
-  height: 400px;
-  width: 400px;
-  margin-right: 300px;
-  float: right;
-}
+*==========================*/
 
-.container-first h1 {
-  color: #49B4FC;
-  font-size: 60pt;
-}
-
-.container-first p {
-    font-size: 24px;
-    color: #e6e6e6;
-}
-
-.container-second {
-    margin-top: 500px;
-    background: #e6e6e6;
-    width: 100%;
-}
-
-.container-second h2 {
-    font-size: 36pt;
-    text-align: center;
-    padding-top: 200px;
-    color: #4d4d4d;
-}
-span {
-    color: #49B4FC;
-    font-size: 40pt;
-}
-
-.container-second p {
-    font-size: 24pt;
-    text-align: left;
-    line-height: 1.6;
-    padding: 30px 35px;
-    width: 1000px;
-    margin: auto;
-}
 
 .menu ul {
   list-style: none;
@@ -112,3 +58,106 @@ span {
 .sub-menu {
   display:none;
 }
+ header {
+   background: white;
+   float: left;
+   margin-left: 0;
+   margin-top: 0;
+   position: fixed;
+   width: 100%;
+   z-index: 99999;
+   top: 0;
+}
+
+/*==========================
+
+Top Section
+
+*==========================*/
+
+
+.container-first {
+  margin-top: 400px;
+  margin-left: 100px;
+}
+
+.logo {
+  height: 35px;
+  width: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 2px 2px;
+  position: absolute;
+  top: 0;
+}
+
+.image-main {
+  height: 400px;
+  width: 400px;
+  margin-right: 300px;
+  float: right;
+  animation-name: phone;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+
+.container-first h1 {
+  color: #49B4FC;
+  font-size: 60pt;
+}
+
+.container-first p {
+    font-size: 24px;
+    color: #e6e6e6;
+}
+
+/*==========================
+
+Second Section
+
+*==========================*/
+
+.container-second {
+    margin-top: 500px;
+    background: #e6e6e6;
+    width: 100%;
+}
+
+.container-second h2 {
+    font-size: 36pt;
+    text-align: center;
+    padding-top: 200px;
+    color: #4d4d4d;
+}
+span {
+    color: #49B4FC;
+    font-size: 40pt;
+}
+
+.container-second p {
+    font-size: 24pt;
+    text-align: center;
+    line-height: 1.6;
+    padding: 30px 35px;
+    width: 1050px;
+    margin: auto;
+}
+
+a.learn-more {
+    background: #49B4FC;
+    color: #e6e6e6;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+
+@keyframes phone {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
