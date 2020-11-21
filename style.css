@@ -96,9 +96,7 @@ Top Section
   width: 400px;
   margin-right: 300px;
   float: right;
-  animation-name: phone;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
+  animation: phone 3s forwards;
 }
 
 
